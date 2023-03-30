@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3265652413	PlayTestEvent			\Default Work Unit\TestEvents\PlayTestEvent	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	106217589	TestSound	C:\DylanPautlerProduction\Repo\where-no-ones-been\WwiseProject\SilentSpiral\.cache\Windows\SFX\2018123-215724_1C73F4D0.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestMixer\TestSound		399868
+
