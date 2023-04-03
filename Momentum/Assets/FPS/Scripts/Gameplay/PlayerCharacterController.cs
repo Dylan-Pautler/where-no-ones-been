@@ -208,6 +208,7 @@ namespace Unity.FPS.Gameplay
             // crouching
             if (m_InputHandler.GetCrouchInputDown())
             {
+
                 SetCrouchingState(!IsCrouching, false);
             }
 
@@ -292,7 +293,13 @@ namespace Unity.FPS.Gameplay
                 if (isSprinting)
                 {
                     isSprinting = SetCrouchingState(false, false);
+                    PlayerCamera.fieldOfView = 20.0f;
+               
                 }
+                else
+                {
+                    PlayerCamera.focalLength = 60.0f;
+                }    
 
                 float speedModifier = isSprinting ? SprintSpeedModifier : 1f;
 
