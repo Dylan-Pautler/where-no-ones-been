@@ -172,6 +172,7 @@ namespace Unity.FPS.Gameplay
 
         void Update()
         {
+            Debug.Log(m_Controller.transform.position);
             // check for Y kill
             if (!IsDead && transform.position.y < KillHeight)
             {
