@@ -9,6 +9,7 @@ namespace Unity.FPS.Gameplay
     {
         [Header("References")] [Tooltip("Reference to the main camera used for the player")]
         public Camera PlayerCamera;
+        //public Cinemachine PlayerCamera;
 
         [Tooltip("Audio source for footsteps, jump, etc...")]
         public AudioSource AudioSource;
