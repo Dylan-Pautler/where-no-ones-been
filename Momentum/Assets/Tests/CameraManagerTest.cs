@@ -3,12 +3,26 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
-
+using Cinemachine;
 public class CameraManagerTest
 {
     // References
     // will need a reference to the cinemachine
-
+    public GameObject cvc1; // Cinemachine Virtual Camera
+    private string virtualCameraLabel = "VirtualCamera";
+    
+    // create references to the usingcinemachinetest so that we can get a solid
+    // pipeline of actual game code and functional testing
+    [Test]
+    public void Start()
+    {
+        // arrange
+        cvc1 = GameObject.FindWithTag(virtualCameraLabel);
+        // act
+        // assert
+        Assert.AreEqual(virtualCameraLabel, "VirtualCamera");
+        Assert.IsNotNull(cvc1);
+    }
 
     // A Test behaves as an ordinary method
     [Test]
