@@ -11,6 +11,7 @@ public class testingMovement : MonoBehaviour
     private Transform p_transform;
     private Vector3 p;
     private Vector2 moveAmount;
+    private bool jumped;
 
     private void Start()
     {
@@ -30,7 +31,21 @@ public class testingMovement : MonoBehaviour
         p_transform.position = p;
 
         // assert happens if moveAmount is equal to the ReadValue?
+
+    }
+    public void OnJump(InputAction.CallbackContext context)
+    {
+        //Debug.Log(context.phase);
+        Debug.Log(context.ReadValueAsButton());
+        jumped = context.ReadValueAsButton();
+
+        if(jumped)
+        {
+            p = p_transform.position;
+            p.y += 10.0f;
+
+            p_transform.position = p;
+        }
         
     }
-
 }

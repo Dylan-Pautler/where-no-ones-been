@@ -4,6 +4,8 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 using Cinemachine;
+using Unity.UI;
+
 public class CameraManagerTest
 {
     // References
@@ -17,8 +19,8 @@ public class CameraManagerTest
     public void Start()
     {
         // arrange
-        cvc1 = GameObject.FindWithTag(virtualCameraLabel);
         // act
+        cvc1 = GameObject.FindWithTag(virtualCameraLabel);
         // assert
         Assert.AreEqual(virtualCameraLabel, "VirtualCamera");
         Assert.IsNotNull(cvc1);
