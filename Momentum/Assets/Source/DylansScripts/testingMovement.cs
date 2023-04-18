@@ -10,42 +10,24 @@ public class testingMovement : MonoBehaviour
     public GameObject player;
     private Transform p_transform;
     private Vector3 p;
-    private Vector2 moveAmount;
-    private bool jumped;
+    private Vector3 moveAmount3d;
 
     private void Start()
     {
         p_transform = player.GetComponent<Transform>();
         p = p_transform.position;
     }
-    public void OnMove(InputAction.CallbackContext context)
+
+    public void OnMove3d(InputAction.CallbackContext context)
     {
+        moveAmount3d = context.ReadValue<Vector3>();
         Debug.Log(context.phase);
-        Debug.Log(context.ReadValue<Vector2>());
-        // arrange..
-        // act
-        moveAmount = context.ReadValue<Vector2>();
-        p.x += moveAmount.x;
-        p.z += moveAmount.y;
-
-        p_transform.position = p;
-
-        // assert happens if moveAmount is equal to the ReadValue?
-
     }
-    public void OnJump(InputAction.CallbackContext context)
+
+    public void Update()
     {
-        //Debug.Log(context.phase);
-        Debug.Log(context.ReadValueAsButton());
-        jumped = context.ReadValueAsButton();
-
-        if(jumped)
-        {
-            p = p_transform.position;
-            p.y += 10.0f;
-
-            p_transform.position = p;
-        }
-        
+        // 3d movement
+        p += moveAmount3d;
+        p_transform.position = p;
     }
 }

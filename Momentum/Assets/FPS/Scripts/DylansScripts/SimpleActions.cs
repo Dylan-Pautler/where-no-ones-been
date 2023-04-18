@@ -31,7 +31,7 @@ public partial class @SimpleActions: IInputActionCollection2, IDisposable
                     ""name"": ""move"",
                     ""type"": ""Value"",
                     ""id"": ""caf48dfd-ee87-4462-b7ec-a99e741231d7"",
-                    ""expectedControlType"": ""Vector2"",
+                    ""expectedControlType"": ""Vector3"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
@@ -48,9 +48,20 @@ public partial class @SimpleActions: IInputActionCollection2, IDisposable
             ],
             ""bindings"": [
                 {
-                    ""name"": ""2D Vector"",
-                    ""id"": ""2994ad86-c942-4686-b817-8899fe12988d"",
-                    ""path"": ""2DVector(mode=2)"",
+                    ""name"": """",
+                    ""id"": ""a0c2623f-416b-4817-b35e-10175be21050"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": ""Press"",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""3D Vector"",
+                    ""id"": ""c3d8745c-e195-474b-9b2d-01e78a563fb6"",
+                    ""path"": ""3DVector(mode=1)"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -60,8 +71,8 @@ public partial class @SimpleActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Up"",
-                    ""id"": ""f2420a2c-b98f-4c14-962c-a27954f88c63"",
-                    ""path"": ""<Keyboard>/w"",
+                    ""id"": ""b557859c-fe20-4377-9fec-02fc28292dde"",
+                    ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
@@ -71,8 +82,8 @@ public partial class @SimpleActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Down"",
-                    ""id"": ""0730e240-76f1-4a3c-b356-c717dc76359b"",
-                    ""path"": ""<Keyboard>/s"",
+                    ""id"": ""fbb4ee75-0039-438a-9de4-d86b7f045df7"",
+                    ""path"": ""<Keyboard>/shift"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
@@ -82,7 +93,7 @@ public partial class @SimpleActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Left"",
-                    ""id"": ""4993ed8d-083b-41bd-9ea8-0d6a5db36167"",
+                    ""id"": ""67e467cc-3071-472c-99b8-825fcedba763"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -93,8 +104,19 @@ public partial class @SimpleActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Right"",
-                    ""id"": ""b7a8856f-ef3e-47d5-823f-2fef800a5efe"",
+                    ""id"": ""50f0aa6f-e752-4f99-8f4e-af810b56a7fd"",
                     ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Forward"",
+                    ""id"": ""41aa30a7-c819-4191-b563-da849e84e97d"",
+                    ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
@@ -103,15 +125,15 @@ public partial class @SimpleActions: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""a0c2623f-416b-4817-b35e-10175be21050"",
-                    ""path"": ""<Keyboard>/space"",
-                    ""interactions"": ""Press"",
+                    ""name"": ""Backward"",
+                    ""id"": ""b4c8efdf-b4b1-4a59-a9b6-8c21f036be9b"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""jump"",
+                    ""action"": ""move"",
                     ""isComposite"": false,
-                    ""isPartOfComposite"": false
+                    ""isPartOfComposite"": true
                 }
             ]
         }

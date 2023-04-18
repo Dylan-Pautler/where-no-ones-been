@@ -1,9 +1,9 @@
 {
-    "name": "CameraManagerPlayMode",
+    "name": "TestsPlayMode",
     "rootNamespace": "",
     "references": [
         "UnityEngine.TestRunner",
-        "UnityEditor.TestRunner"
+        "Source"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
