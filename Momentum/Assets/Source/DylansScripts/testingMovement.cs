@@ -28,7 +28,14 @@ public class testingMovement : MonoBehaviour
 
 
         // must be walking 
-
+        if(moveAmount3d.y == 0.0f)
+        {
+            p_animator.Play("Walk");
+        }
+        else // must be jumping
+        {
+            p_animator.Play("Jump");
+        }
 
         Debug.Log(context.phase);
     }
@@ -38,14 +45,5 @@ public class testingMovement : MonoBehaviour
         // 3d movement
         p += moveAmount3d;
         p_transform.position = p;
-
-        if (moveAmount3d.y == 0.0f)
-        {
-            p_animator.Play("Walk");
-        }
-        else // must be jumping
-        {
-            p_animator.Play("Jump");
-        }
     }
 }
