@@ -1186,8 +1186,8 @@ GameObject:
   - component: {fileID: 2083500651}
   - component: {fileID: 2083500650}
   - component: {fileID: 2083500649}
-  - component: {fileID: 2083500652}
-  - component: {fileID: 2083500654}
+  - component: {fileID: 2083500656}
+  - component: {fileID: 2083500657}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1275,7 +1275,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2083500644}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2083500652
+--- !u!114 &2083500656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083500644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041a817453500db4bbc72124894e5043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2083500644}
+--- !u!114 &2083500657
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1287,7 +1300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 4d74e5bba23d25e4ba02b3011c9a2983,
+  m_Actions: {fileID: -944628639613478452, guid: ab2bd272eb289db4d830462dce3475b2,
     type: 3}
   m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
@@ -1303,7 +1316,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2083500654}
+      - m_Target: {fileID: 2083500656}
         m_TargetAssemblyTypeName: testingMovement, Source
         m_MethodName: OnMove3d
         m_Mode: 0
@@ -1315,27 +1328,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: caf48dfd-ee87-4462-b7ec-a99e741231d7
-    m_ActionName: Gameplay/move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 80f3813f-4c5f-46d1-82ee-0d07ed4af5e4
-    m_ActionName: Gameplay/jump[/Keyboard/space]
+    m_ActionId: 4f1774ee-56ef-4fae-b16a-a6df41ecc20b
+    m_ActionName: Gameplay/Move[/Keyboard/space,/Keyboard/leftShift,/Keyboard/a,/Keyboard/d,/Keyboard/w,/Keyboard/s]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard
   m_DefaultActionMap: Gameplay
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &2083500654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2083500644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 041a817453500db4bbc72124894e5043, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 2083500644}
