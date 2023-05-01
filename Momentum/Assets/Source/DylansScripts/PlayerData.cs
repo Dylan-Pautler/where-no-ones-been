@@ -19,11 +19,14 @@ public class PlayerData : MonoBehaviour
 
     private void Awake()
     {
+        int commitChangePleaseDelete = 0;
         //act
         animator = this.gameObject.GetComponent<Animator>();
         transform_to_animate = child_components.transform;
         child_component_collider = child_components.GetComponent<CapsuleCollider>();
         //assertions???
+
+       
     }
 
     public Animator GetAnimator()
